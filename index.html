@@ -39,6 +39,7 @@
         <th>Name</th>
         <th>Age</th>
         </tr>
+    </thead>
         <tbody>
             <tr>
         <th>1</th>
@@ -46,50 +47,57 @@
         <th>23</th>
             </tr>
         </tbody>
-        <thead>
             <tr>
-         <th>2</th>
-        <th>Omer</th>
-        <th>22</th>
-            </tr>
-        </thead>
+         <td>2</td>
+        <td>Omer</td>
+        <td>22</td>
+     </tr>
         <tr>
         <th>3</th>
         <th>mona</th>
         <th>19</th>
         </tr>
-    </thead>
 </table>
 <h1>adding registrtion form</h1>
-<form action="" method="post">
-    <label for="name">Name:</label>
-    <input type="text"><br>
+<form action="index.html" method="post">
+    <label for="fullname">Name:</label>
+    <input type="text" id="fullname" name="full-name" required><br><br>
     <label for="age">age:</label>
-    <input type="number"><br>
+    <input type="number" id="age" name="user-age" required><br><br>
     <label for="Gender">gender</label>
-    <input type="radio" name="Gender" value="femal">femal
-    <input type="radio" name="gender" value="male">male 
-    <label for="">shift</label><br>
+    <input type="radio" name="Gender" value="Femal">Femal
+    <input type="radio" name="gender" value="Male">Male <br><br>
+    <label for="">shift:</label><br><br>
     <select>
         <option>---selrct----</option>
         <option value="morining">moring</option>
-        <br>
+        <br><br>
         <option value="afternoon">afternoon</option>
         <br>
         <br>
-    </select><br>
-    <label for="">phone number</label>
-    <input type="tel"><br>
+    </select><br><br> 
+    <label for="phone">phone number:</label>
+    <input type="tel" id="phone"> <br><br>
     <label for="skills"></label>
     <input type="checkbox" value="HTML">HTML  
-    <input type="checkbox" value="CSS">CSS <br>
+    <input type="checkbox" value="CSS">CSS <br><br>
     <label for="MM">email</label> 
-    <input type="email"><br>
-    <label for="">password</label><br>
-    <input type="password"><br>
-    <input type="submit" value="submit">
-
+    <input type="email">email<br><br>
+    <label for="">password</label><br><br>
+    <input type="password"><br><br>
+        <input type="color" value="blue">
+        <label for="">massage:</label><br><br>
+        <textarea rows="10" cols="50"></textarea><br><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
 </form>
+<p>
+    <form action="https://www.google.com/Search" method="get" target="_blank">
+        <label for="">Search:</label>
+        <input type="text" name="q" id="query">
+        <input type="submit" value="Search from Goole">
+    </form>
+</p>
 
 </body> 
 </html>
